@@ -6,7 +6,6 @@ export var getColorFromString = function (str) {
   var colour = "#";
   for (var j = 0; j < 3; j++) {
     var value = (hash >> (j * 8)) & 0xff;
-    // TODO: Fix depreciated function
     colour += ("00" + value.toString(16)).substr(-2);
   }
   return colour;
